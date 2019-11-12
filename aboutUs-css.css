@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Engagement&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+body {
+  background-color: black;
+  background-image: url(./images/backgroundAboutUs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/*----------------------CONTENT---------------*/
+.wrapper {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 100px;
+  grid-template-columns: [col] auto [col] auto [col] auto [col] auto  ;
+  grid-template-rows: [row] auto [row] auto [row] auto;
+  background-color: #fff;
+  color: #444;
+  background-color: transparent;
+  background-size: cover;
+  margin: 100px;
+  margin-bottom: 80px;
+}
+
+.box {
+  background-color: #35281e;
+
+  color: white;
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 150%;
+  transition: all 0.3s ease-out;
+  border: 10px;
+  box-shadow: 10px 5px 5px #323135;
+}
+/*
+.box:hover {
+  opacity: 1;
+  background-color: #35281e;
+  color: white;
+}*/
+.a {
+  grid-column: col / span 3;
+  padding: 20px;
+  grid-row: row ;
+  animation: slideInLeft 2.5s;
+}
+@keyframes slideInLeft {
+ from {
+   -webkit-transform: translate3d(-100%, 0, 0);
+   transform: translate3d(-100%, 0, 0);
+   visibility: visible;
+ }
+ to {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+ }
+}
+
+.b {
+  grid-column: col 4 / span 1 ;
+  grid-row: row ;
+}
+.c {
+  grid-column: col ;
+  grid-row: row 2 ;
+}
+.d {
+  grid-column: col 2 / span 3 ;
+  grid-row: row 2 ;
+  animation: slideInRight 2.5s;
+}
+@keyframes slideInRight {
+ from {
+   -webkit-transform: translate3d(100%, 0, 0);
+   transform: translate3d(100%, 0, 0);
+   visibility: visible;
+ }
+ to {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+ }
+}
+
+.e {
+  grid-column: col / span 3;
+  grid-row: row 3;
+  animation: slideInLeft 1s; 
+}
+
+
+.f{
+  grid-column: col 4 / span 1 ;
+  grid-row: row 3;
+}
+
+video{
+  border-radius: 5px;
+}
+
+
+@media(max-width: 1011px){
+  .wrapper {
+      display: block;
+      
+      padding: 0;
+     justify-items: center;
+    }
+ 
+}
