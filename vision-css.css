@@ -25,10 +25,8 @@ body{
     grid-template-areas: 
     "bild1 bild2 bild3"
     "text1 text1 text2"
-    "text3 text4 text4"
-    
+    "text3 text4 text4" 
 }
-
 
 /* Text på bilderna */
 
@@ -58,7 +56,6 @@ body{
     
 }
 
-
 .bild1 {
     background-image: url(./images/roasted-beans2.jpg);
     background-size: cover;
@@ -76,8 +73,6 @@ body{
     justify-content: center;
     grid-area: bild2;
 }
-
-
 
 .bild3{
     background-image: url(./images/fresh-beans.png);
@@ -105,10 +100,7 @@ body{
     ,#BC8F8F);
     background-size: cover;
     grid-area: text1;
-  
-
 }
-
 
 .text2{
     
@@ -206,15 +198,48 @@ font-size: 2em;
         width: 30%;
         background-size: contain;
     }
-
     .grid > div{
-
-        padding: 30px;
-        border-radius: 6px;
-        letter-spacing: 1px;
         font-size: 1.5em;
-        color: white;
     }
   
     }
+
+    @media screen and (max-width: 480px) {
+        .grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: center;
+          margin-top: 10px;
+          grid-template-areas:
+          "bild1"
+          "bild2"
+          "bild3"
+          "text1"
+          "text2"
+          "text3"
+          "text4"  
+        }
+        .bild1, .bild2, .bild3 {
+            width: 50%;
+        }
+    
+        .text2{
+            
+            margin-top: 10px;
+            background-image: url(./images/flera-koppar.jpg);
+            grid-area: text2;
+            width: 30%;
+            background-size: contain;
+        }
+    
+        .grid > div{
+    
+            padding: 30px;
+            border-radius: 6px;
+            letter-spacing: 1px;
+            font-size: 1.8em;
+            color: white;
+        }
+      
+        }
 
