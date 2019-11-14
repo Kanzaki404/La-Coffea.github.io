@@ -1,4 +1,5 @@
 /*--------------NAV-------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 
 a{
     text-decoration: none;
@@ -19,6 +20,7 @@ a{
     background-color: rgba(19, 19, 19, 0.547);
     justify-items: center;
    
+   
   }
   
   .brand{
@@ -28,8 +30,9 @@ a{
     font-size: 2.6em;
     
     padding-left: 20px;
-    font-family: 'Engagement', cursive;
+    /* font-family: 'Engagement', cursive; */
     letter-spacing: 2px;
+    font-family: 'Great Vibes', cursive;
     
   }
   
@@ -94,7 +97,16 @@ a{
   
   */
   
-  
+  .menuIcon{
+    background-image: url(./images/menu-button.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    margin-right: -25px;
+ }
+
   #menuToggle:checked ~ .menu{
     position: absolute;
     right:0px;
@@ -141,7 +153,7 @@ a{
 
     padding-top: 10px;
   
-    background-color: rgb(19, 19, 19);
+    background-color: rgba(19, 19, 19, 0.547);
     position: relative;
     bottom: 0;
     left: 0;
@@ -162,8 +174,8 @@ a{
     background-image: linear-gradient(to top, #505357, #48464e, #45373f, #402b2a, #322215);  }
 .labell{
   color: white;
-  font-size: 20px;
-  font-family: 'Big Shoulders Text';
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
 }
   .page-footer .container {
       text-align: center;
@@ -173,13 +185,13 @@ a{
     list-style-type: none;
     display: list-item;
     text-align: center;
-    margin: 5;
-    padding: 5;
+    margin: 5px;
+    padding: 5px;
   }
   ul {
-    margin: 5;
-    padding: 5;
-    padding-inline-start: 0px;
+    margin: 5px;
+    padding: 5px;
+    
   }
 
   .box1, .box2, .box3 {
@@ -202,15 +214,15 @@ a{
 
   .button {
     font-size: 1em;
-    padding: 10px;
+    padding: 6px;
     color: #fffff5;
     border: 2px solid #fffff5;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    padding-top: 5px;
-    padding-bottom: 5px;;
+    padding-top: 3px;
+    padding-bottom: 3px;;
   }
   .button:hover {
     background: #fff;
@@ -277,6 +289,10 @@ a{
     grid-template: "an  jo"
                    "al  mo"
   }
+  .info img{
+height: 100px;
+width: 100px;
+  }
   .close {
     position: absolute;
     top: 20px;
@@ -308,18 +324,18 @@ a{
      padding: 1em;
      text-align: center;
      color: #a8a8a8;
-     @include text-shadow(1px 1px 0 rgba(white, 1));
+     
    }
 
 input,textarea {
   border:0; outline:0;
   padding: 1em;
-  @include border-radius(8px);
+  
   display: block;
   width: 100%;
   margin-top: 1em;
   font-family: 'Merriweather', sans-serif;
-  @include box-shadow(0 1px 1px rgba(black, 0.1));
+  
   resize: none;
 
   padding-left: 0;
@@ -383,7 +399,7 @@ margin-bottom: 1em;
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 20px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -435,9 +451,13 @@ margin-bottom: 1em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 li>img {
- max-width: auto;
- height: 50px;
+ width: auto;
+ height: 30px;
  background-color: transparent;
+}
+.payments>img{
+ width: auto;
+ height: 30px;
 }
 .green>ul {
  list-style-type: none;
