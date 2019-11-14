@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Engagement&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 body, html{
     margin: 0;
     height: 100%;
@@ -11,13 +11,12 @@ body, html{
     font-size: 1.1em;
     background-repeat: no-repeat;
     color: black;
-    background-position: fixed;
-
+    overflow-x: hidden;
 }
 
 
 
-/* Alexanders Part*/
+
 a{
     text-decoration: none;
     color: white;
@@ -29,25 +28,27 @@ li {
 
 header{
     width: 100%;
-    height: 55px;
+    height: 60px;
     margin: auto;
-    display: flex;
-    justify-content: center;
     background-color: rgba(19, 19, 19, 0.547);
     animation: fadeIn 1.5s;
+    
     
 }
 
 
 .brand{
-    float: left;
-    line-height: 50px;
+   
+    margin-left: 1.0em;
+    line-height: 75px;
     color: white;
     font-size: 2.6em;
-    
+    display: flex;
+    justify-content: center;
     padding-left: 20px;
-    font-family: 'Engagement', cursive;
+    font-family: 'Great Vibes', cursive;
     letter-spacing: 2px;
+    
     
 }
 nav{
@@ -168,6 +169,9 @@ nav a:hover{
 
 
 
+
+
+/**/Bilder
 .coffeeimg1, .coffeeimg2, .coffeeimg3, .coffeeimg4 {
 
     position: relative;
@@ -180,29 +184,35 @@ nav a:hover{
 
 .coffeeimg1 {
 
-    background-image: url(../images/coffee-mug.jpg);
-    min-height: 100%;
+    background-image: url(./images/squarecoffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 
 }
 
 .coffeeimg2 {
 
-    background-image: url(../images/coffee-bg.jpeg);
+    background-image: url(./images/coffee-bg.jpeg);
     min-height: 400px;
+    width: 100%
 
 }
 .coffeeimg3 {
 
-    background-image: url(../images/faded-coffee.jpeg);
+    background-image: url(./images/faded-coffee.jpeg);
     min-height: 400px;
+    width: 100%
    
     
 }
 
 .coffeeimg4 {
 
-    background-image: url(../images/coffeeshop.jpg);
+    background-image: url(./images/coffeeshop.jpg);
     min-height: 100%;
+    width: 100%
 
     
 }
@@ -213,7 +223,6 @@ nav a:hover{
     text-align: center;
     color: black;
     padding:50px 80px;
-    
     
 
 }
@@ -246,77 +255,186 @@ color: #fffff5;
 
 
 /*Box1 for vårt Kaffe*/
+
+.row1 {
+   
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+
+
+}
+
   .column1 {
     
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 500px;
     padding: 10px;
-
+    background-image: url(./images/spices.jpeg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    margin: auto;
     
   }
   .column2 {
     
-    width: 50%;
-    padding: 10px;
-    
-    
-  }
-
-  .row1:after {
-   
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    
-   
-   /*
-    content: "";
-    display: table;
-    clear: both;
-   */ 
-  }
-
-  
-  
-  .column3 {
-    
     width: 100%;
-    height: auto;
-    padding: 10px;
-    
-  }
-  .column4 {
-    
-    width: 40%;
-    height: 50%;
+    height: 86%;
     float: right;
     padding: 10px;
     position: relative;
-    background-image: url(../images/coffeequote.jpeg)
-    
+    background-repeat: no-repeat;
+    margin: auto;
     
   }
 
   .row2 {
    
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
     
+  
+  }
+  .column3 {
+  
+    /*
+    width: 100%;
+    height: auto;
+    padding: 10px;
+*/
+    
+    width: 100%;
+    height: 86%;
+    float: right;
+    padding: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    margin: auto
+    
+  }
+  
+  .column4 {
+    width: 321px;
+    height: 482px;
+    padding: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    margin:auto;
+    background-image: url(./images/jars.jpeg);
+  
+  }
+
+
+
    /*
     content: "";
     display: table;
     clear: both;
    */ 
+  
+
+@media (max-width: 430px) {
+
+.brand {
+
+    margin-left: 0;
+    line-height: 50px;
+    color: white;
+    font-size: 2.6em;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-family: 'Engagement', cursive;
+    letter-spacing: 2px;
+
+
+}
+
+
+
+
+}
+
+
+@media(max-width:900px) {
+  .row1 {
+   
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+  
+  
+  }
+  .section {
+    padding: 0;
   }
 
+  .column1 {
+    width: 350px;
+    height: 500px;
+    padding: 10px;
+    background-image: url(./images/spices.jpeg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    margin: auto;
+    
+}
+.column2 {
+    
+  width: 350px;
+    height: auto;
+    
+    padding: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    
+    margin: auto;
 
-  .img {
+  
+}
+.row2 {
+   height: auto;
+  display: grid;
+  grid-template-columns: 1fr; 
+  
 
-  height: 100px;
-  width: 100px;
+}
+.column3 {
+  
+  /*
+  width: 100%;
+  height: auto;
+  padding: 10px;
+*/
+  
+  width: 321px;
+  height: auto;
+  float: right;
+  padding: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  margin: auto
+  
+}
+
+.column4 {
+  
+  width: 321px;
+  height: 482px;
+  padding: 10px;
+  position: relative;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 0;
+  background-image: url(./images/jars.jpeg);
+  padding-bottom: 23px;
+}
+}
 
 
-  }
+
+  
