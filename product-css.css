@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Engagement&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet');
 
 *{
     padding:0;
@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-blend-mode: multiply;
     background: rgba(78, 77, 77, 0.3)url(./images/cc.jpg);
     /* background-image: url(./img/cc.jpg); */
@@ -58,14 +58,14 @@ body{
   .grid-item {
     background-color: rgba(0,0, 0, 0.3);
     padding: 5px;
-    font-size: 30px;
+    font-size: 1em;
     text-align: center;
     color: white;
     transition: all 0.2s ease-in-out;
     border: solid 1px rgb(70, 33, 33);
   }
 
-  #arabica{
+  .arabica{
     height: 60%;
     width:100%;
     margin-top:20px;
@@ -80,15 +80,19 @@ body{
   }
 
   
-  #arabica:hover{
+  .arabica:hover{
     opacity: 1;
   }
 
 .details{
     height: 80px;
     text-align: left;;
-    font-size: 0.66em;
+    font-size: 1em;
 
+}
+
+.details > p{
+    font-size: 2em;
 }
 
 .ducktape{
@@ -136,7 +140,7 @@ body{
 .pe{
   display: none;
   position: absolute;
-  font-size: 0.7em;
+  font-size: 1em;
   text-align: left;
   padding: 90px 40px 120px 70px;
   z-index: 10;
