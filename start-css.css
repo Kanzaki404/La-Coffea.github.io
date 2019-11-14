@@ -167,6 +167,130 @@ nav a:hover{
   }
 }
 
+.buttonread1 {
+  border-radius: 4px;
+  background-color: grey;
+  border: none;
+  color: #FFFFF5;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonread1 .span1 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonread1 .span1:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonread1:hover .span1 {
+  padding-right: 25px;
+}
+
+.buttonread1:hover .span1:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/**/
+.buttonread2 {
+  border-radius: 4px;
+  background-color: grey;
+  border: none;
+  color: #FFFFF5;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonread2 .span2 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonread2 .span2:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonread2:hover .span2 {
+  padding-right: 25px;
+}
+
+.buttonread2:hover .span2:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/**/
+.buttonread3 {
+  border-radius: 4px;
+  background-color: grey;
+  border: none;
+  color: #FFFFF5;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonread3 .span3 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonread3 .span3:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonread3:hover .span3 {
+  padding-right: 25px;
+}
+
+.buttonread3:hover .span3:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
 
 
 
