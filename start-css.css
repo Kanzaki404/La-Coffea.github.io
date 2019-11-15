@@ -16,8 +16,18 @@ body, html{
 
 
 
+.menu{
+  z-index: 20;
+  right: -240px;
+  width: 240px;
+  height: 100%;
+  position: fixed !important;
+  background-color:transparent;
+  
+  
 
-a{
+}
+/* a{
     text-decoration: none;
     color: white;
     
@@ -72,7 +82,7 @@ nav a:hover{
     width: 90px;
     transition:all 0.5s ease;
 }
-/*-------------------------*/
+
 .menu{
      
     right: -240px;
@@ -82,7 +92,7 @@ nav a:hover{
     background-color:transparent;
     overflow: hidden;
     margin-right: 20px;
-   /* transition: all .3s ease-in-out;*/
+  
  
 }
 
@@ -97,10 +107,7 @@ nav a:hover{
 #menuToggle{
     display:none;
 }
-/*lol
-    transform: rotate(45deg);
-    transition: all .3s ease-in-out;
-*/
+
 #menuToggle:checked ~ .menu{
     position: absolute;
     right:0px;
@@ -135,7 +142,7 @@ nav a:hover{
     to {
       opacity: 0;
     }
-}
+} */
 
 @keyframes slide-in-blurred-top {
   0% {

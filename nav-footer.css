@@ -9,6 +9,7 @@ a{
   
   li {
     list-style-type: none;
+    display: inline;
   }
   
   
@@ -27,10 +28,9 @@ a{
     float: left;
     line-height: 50px;
     color: white;
-    font-size: 2.6em;
-    
+    font-size: 2em;
+    padding-top: 5px;
     padding-left: 20px;
-    /* font-family: 'Engagement', cursive; */
     letter-spacing: 2px;
     font-family: 'Great Vibes', cursive;
     
@@ -44,21 +44,19 @@ a{
   }
   
   nav a{
-    display: block;
+    display: inline-block;
     padding: 15px 0;
     width: 100px;
-    margin-left: 132px;
+    /* margin-left: 132px; */
     
   }
   
-  nav a:focus{
-    animation: zoomOut 1s ;
-  }
+  
   
   nav a:hover{
     background-color:transparent;
     border-bottom: 1px solid white;
-    width: 90px;
+    
     transition:all 0.5s ease;
   }
   
@@ -70,10 +68,10 @@ a{
     right: -240px;
     width: 240px;
     height: 100%;
-    position: fixed;
+    position: absolute;
     background-color:transparent;
-    overflow: hidden;
-   /* transition: all .3s ease-in-out;*/
+    
+    
   
   }
   
@@ -91,11 +89,7 @@ a{
   #menuToggle{
     display:none;
   }
-  /*lol
-    transform: rotate(45deg);
-    transition: all .3s ease-in-out;
-  
-  */
+
   
   .menuIcon{
     background-image: url(./images/menu-button.png);
@@ -104,11 +98,11 @@ a{
     height: 30px;
     width: 30px;
     margin: 10px;
-    margin-right: -25px;
+    /* margin-right: -25px; */
  }
 
   #menuToggle:checked ~ .menu{
-    position: absolute;
+    background-color: rgba(19, 19, 19, 0.547);
     right:0px;
     animation: slideInLeftMenu 1s;
   }
@@ -127,21 +121,7 @@ a{
     }
   }
   
-  @keyframes zoomOut {
-    from {
-      opacity: 1;
-    }
   
-    50% {
-      opacity: 0;
-      -webkit-transform: scale3d(0.3, 0.3, 0.3);
-      transform: scale3d(0.3, 0.3, 0.3);
-    }
-  
-    to {
-      opacity: 0;
-    }
-  }
   
 
 

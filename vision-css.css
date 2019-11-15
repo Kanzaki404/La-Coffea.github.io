@@ -5,7 +5,7 @@ body{
     font-family: 'Roboto Mono', monospace;
     background-color: rgb(46, 38, 38);
     text-align: center;
-    
+    margin: 0;
 }
 
 .rubrik{
